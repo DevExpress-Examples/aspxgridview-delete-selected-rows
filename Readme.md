@@ -13,7 +13,28 @@ The example shows how to delete selected rows of an [ASPxGridView](https://docs.
 
 ![A grid with selected rows to be deleted](images/resulting-grid.png)
 
-Use the client-side [ASPxClientGridView.PerformCallback](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.PerformCallback(args)?p=netframework) method to send custom callbacks to the server when a user click the **Delete** button. 
+Use the client-side [ASPxClientGridView.PerformCallback](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.PerformCallback(args)?p=netframework) method to send custom callbacks to the server when a user click the **Delete** button.
+
+```aspx
+function OnClickButtonDel(s, e) {
+    grid.PerformCallback('Delete');
+}
+<dx:ASPxGridView ID="grid" KeyFieldName="ID" runat="server" 
+                 AutoGenerateColumns="False" 
+                 OnCustomCallback="gridView_CustomCallback"...>
+    <Columns>
+        <dx:GridViewCommandColumn ...>
+            <FooterTemplate>
+                <dx:ASPxButton ID="buttonDel" AutoPostBack="false" 
+                               runat="server" Text="Delete">
+                    <ClientSideEvents Click="OnClickButtonDel"/>
+                </dx:ASPxButton>
+            </FooterTemplate>
+        </dx:GridViewCommandColumn>
+    </Columns>
+    <Settings ShowFooter="True" />
+</dx:ASPxGridView>
+```
 
 On the server, the `PerformCallback` method raises the [ASPxGridView.CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomCallback?p=netframework) event. 
 
