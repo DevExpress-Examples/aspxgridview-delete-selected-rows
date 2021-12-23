@@ -13,7 +13,7 @@ The example shows how to delete selected rows of an [ASPxGridView](https://docs.
 
 ![A grid with selected rows to be deleted](images/resulting-grid.png)
 
-Use the client-side [ASPxClientGridView.PerformCallback](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.PerformCallback(args)?p=netframework) method to send custom callbacks to the server when a user click the **Delete** button.
+Use the client-side [PerformCallback](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.PerformCallback(args)?p=netframework) method to send custom callbacks to the server when a user click the **Delete** button.
 
 ```aspx
 function OnClickButtonDel(s, e) {
