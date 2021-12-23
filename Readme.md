@@ -25,9 +25,9 @@ function OnClickButtonDel(s, e) {
     <ClientSideEvents Click="OnClickButtonDel"/>
 </dx:ASPxButton>
 
-On the server, the `PerformCallback` method raises the [ASPxGridView.CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomCallback?p=netframework) event. 
+On the server, the `PerformCallback` method raises the [CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomCallback?p=netframework) event. 
 
-In the `CustomCallback` event handler, call the [ASPxGridBase.GetSelectedFieldValues](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridBase.GetSelectedFieldValues(System.String--)?p=netframework) method to obtain selected rows. Then, call the [Remove](https://docs.microsoft.com/en-us/dotnet/api/system.data.datarowcollection.remove?view=net-6.0) method for each selected row.
+In the `CustomCallback` event handler, call the [GetSelectedFieldValues](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridBase.GetSelectedFieldValues(System.String--)?p=netframework) method to obtain selected rows. Then, call the [Remove](https://docs.microsoft.com/en-us/dotnet/api/system.data.datarowcollection.remove?view=net-6.0) method for each selected row.
 
 ```cs
 protected void gridView_CustomCallback(object sender, ASPxGridViewCustomCallbackEventArgs e) {
