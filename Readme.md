@@ -24,6 +24,7 @@ function OnClickButtonDel(s, e) {
                runat="server" Text="Delete">
     <ClientSideEvents Click="OnClickButtonDel"/>
 </dx:ASPxButton>
+```
 
 On the server, the `PerformCallback` method raises the [CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomCallback?p=netframework) event. 
 
