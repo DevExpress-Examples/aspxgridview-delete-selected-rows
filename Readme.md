@@ -19,22 +19,11 @@ Use the client-side [ASPxClientGridView.PerformCallback](https://docs.devexpress
 function OnClickButtonDel(s, e) {
     grid.PerformCallback('Delete');
 }
-<dx:ASPxGridView ID="grid" KeyFieldName="ID" runat="server" 
-                 AutoGenerateColumns="False" 
-                 OnCustomCallback="gridView_CustomCallback"...>
-    <Columns>
-        <dx:GridViewCommandColumn ...>
-            <FooterTemplate>
-                <dx:ASPxButton ID="buttonDel" AutoPostBack="false" 
-                               runat="server" Text="Delete">
-                    <ClientSideEvents Click="OnClickButtonDel"/>
-                </dx:ASPxButton>
-            </FooterTemplate>
-        </dx:GridViewCommandColumn>
-    </Columns>
-    <Settings ShowFooter="True" />
-</dx:ASPxGridView>
-```
+...
+<dx:ASPxButton ID="buttonDel" AutoPostBack="false" 
+               runat="server" Text="Delete">
+    <ClientSideEvents Click="OnClickButtonDel"/>
+</dx:ASPxButton>
 
 On the server, the `PerformCallback` method raises the [ASPxGridView.CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomCallback?p=netframework) event. 
 
