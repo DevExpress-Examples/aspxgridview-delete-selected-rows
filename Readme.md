@@ -3,17 +3,17 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E3076)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Grid View for ASP.NET Web Forms - How to Delete the Selected Rows in a Grid
+# Grid View for ASP.NET Web Forms - How to Delete Selected Rows in a Grid
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e3076/)**
 <!-- run online end -->
 
 
-The example shows how to delete selected rows of an [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) that is bound to an in-memory DataSource.
+The example shows how to delete the selected rows of an [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) that is bound to an in-memory DataSource.
 
 ![A grid with selected rows to be deleted](images/resulting-grid.png)
 
-Use the client-side [PerformCallback](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.PerformCallback(args)?p=netframework) method to send custom callbacks to the server when a user click the **Delete** button.
+Use the client-side [PerformCallback](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.PerformCallback(args)?p=netframework) method to send custom callbacks to the server when a user clicks the **Delete** button.
 
 ```aspx
 function OnClickButtonDel(s, e) {
@@ -28,7 +28,7 @@ function OnClickButtonDel(s, e) {
 
 On the server, the `PerformCallback` method raises the [CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomCallback?p=netframework) event. 
 
-In the `CustomCallback` event handler, call the [GetSelectedFieldValues](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridBase.GetSelectedFieldValues(System.String--)?p=netframework) method to obtain selected rows. Then, call the [Remove](https://docs.microsoft.com/en-us/dotnet/api/system.data.datarowcollection.remove?view=net-6.0) method for each selected row.
+In the `CustomCallback` event handler, call the [GetSelectedFieldValues](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridBase.GetSelectedFieldValues(System.String--)?p=netframework) method to obtain the selected rows. Then, call the [Remove](https://docs.microsoft.com/en-us/dotnet/api/system.data.datarowcollection.remove?view=net-6.0) method for each selected row.
 
 ```cs
 protected void gridView_CustomCallback(object sender, ASPxGridViewCustomCallbackEventArgs e) {
