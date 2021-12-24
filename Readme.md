@@ -11,7 +11,7 @@
 <!-- default file list end -->
 # How to delete the ASPxGridView's selected rows
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e3076/)**
+**[[Run Online]](https://codecentral.devexpress.com/128538957/)**
 <!-- run online end -->
 
 
