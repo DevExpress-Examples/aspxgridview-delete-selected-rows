@@ -19,7 +19,7 @@
 # Grid View for ASP.NET Web Forms - How to Delete Selected Rows in a Grid
 >>>>>>> 15.1.3+
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e3076/)**
+**[[Run Online]](https://codecentral.devexpress.com/128538957/)**
 <!-- run online end -->
 
 
