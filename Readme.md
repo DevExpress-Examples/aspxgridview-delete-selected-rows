@@ -46,8 +46,8 @@ protected void gridView_CustomCallback(object sender, ASPxGridViewCustomCallback
 
 ## Files to Look At
 
-* [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
-* [Default.aspx.cs](./CS/WebSite/Default.aspx.cs#L45-L55) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb#L60-L70))
+* [Default.aspx](./CS/Default.aspx) (VB: [Default.aspx](./VB/Default.aspx))
+* [Default.aspx.cs](./CS/Default.aspx.cs#L45-L55) (VB: [Default.aspx.vb](./VB/Default.aspx.vb#L60-L70))
 
 ## Documentation
 
