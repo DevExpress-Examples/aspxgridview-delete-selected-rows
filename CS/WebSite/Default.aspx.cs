@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public partial class _Default : System.Web.UI.Page {
     DataTable table = null;
     protected void Page_Init(object sender, EventArgs e) {
-
+       
     }
     protected void Page_Load(object sender, EventArgs e) {
         if(!IsCallback && !IsPostBack) grid.DataBind();
@@ -64,7 +64,7 @@ public partial class _Default : System.Web.UI.Page {
         }
         return max + 1;
     }
-    private DataTable GetTable() {
+    private DataTable GetTable(){
         DataTable table;
         if(Session["table"] == null) {
             table = new DataTable();
