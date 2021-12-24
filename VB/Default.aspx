@@ -1,8 +1,10 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
-<%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
-    Namespace="DevExpress.Web" TagPrefix="dx" %>
-
-
+﻿<%@ Page Language="vb" AutoEventWireup="true" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxDataView" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxGridView" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <!--region #Markup-->
@@ -23,10 +25,16 @@
         OnCustomCallback="gridView_CustomCallback" 
         ondatabinding="grid_DataBinding" >
         <Columns>
-            <dx:GridViewCommandColumn VisibleIndex="0" ShowSelectCheckbox="True" ShowEditButton="True" ShowNewButton="True" ShowUpdateButton="True">
+            <dx:GridViewCommandColumn VisibleIndex="0" ShowSelectCheckbox="True">
+                <EditButton Visible="True">
+                </EditButton>
+                <NewButton Visible="True">
+                </NewButton>
+                <UpdateButton Visible="True">
+                </UpdateButton>
                 <FooterTemplate>
                     <dx:ASPxButton ID="buttonDel" AutoPostBack="false" runat="server" Text="Delete">
-                        <ClientSideEvents Click="OnClickButtonDel"/>
+                        <ClientSideEvents Click="OnClickButtonDel" />
                     </dx:ASPxButton>
                 </FooterTemplate>
             </dx:GridViewCommandColumn>

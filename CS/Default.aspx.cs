@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
-using DevExpress.Web;
+using DevExpress.Web.ASPxGridView;
+using DevExpress.Web.ASPxEditors;
 using System.Collections.Generic;
 public partial class _Default : System.Web.UI.Page {
     DataTable table = null;
