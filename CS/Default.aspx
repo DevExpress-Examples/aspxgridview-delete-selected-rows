@@ -25,13 +25,7 @@
         OnCustomCallback="gridView_CustomCallback" 
         ondatabinding="grid_DataBinding" >
         <Columns>
-            <dx:GridViewCommandColumn VisibleIndex="0" ShowSelectCheckbox="True">
-                <EditButton Visible="True">
-                </EditButton>
-                <NewButton Visible="True">
-                </NewButton>
-                <UpdateButton Visible="True">
-                </UpdateButton>
+            <dx:GridViewCommandColumn VisibleIndex="0" ShowSelectCheckbox="True" ShowEditButton="true" ShowNewButton="true" ShowUpdateButton="true">
                 <FooterTemplate>
                     <dx:ASPxButton ID="buttonDel" AutoPostBack="false" runat="server" Text="Delete">
                         <ClientSideEvents Click="OnClickButtonDel" />
