@@ -1,7 +1,6 @@
 ﻿Imports System
 Imports System.Data
-Imports DevExpress.Web.ASPxGridView
-Imports DevExpress.Web.ASPxEditors
+Imports DevExpress.Web
 Imports System.Collections.Generic
 Partial Public Class _Default
     Inherits System.Web.UI.Page
