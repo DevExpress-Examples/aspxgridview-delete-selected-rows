@@ -5,9 +5,6 @@
 <!-- default badges end -->
 # Grid View for ASP.NET Web Forms - How to Delete Selected Rows in a Grid
 
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128538957/)**
-<!-- run online end -->
 
 The example shows how to delete the selected rows of an [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) that is bound to an in-memory DataSource.
 
