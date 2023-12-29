@@ -10,9 +10,6 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # How to delete the ASPxGridView's selected rows
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128538957/)**
-<!-- run online end -->
 
 
 <p>The example illustrates how to delete selected rows of the ASPxGridView bound with an in-memory DataSource.</p><p><strong>See Also:<br />
