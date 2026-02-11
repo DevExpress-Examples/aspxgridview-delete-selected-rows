@@ -59,7 +59,7 @@ protected void gridView_CustomCallback(object sender, ASPxGridViewCustomCallback
 * [How to Move Selected Rows From the ASPxGridView Into Another ASPxGridView](https://github.com/DevExpress-Examples/how-to-move-selected-rows-from-the-aspxgridview-into-another-aspxgridview-e2636)
 * [How to Edit an In-Memory Dataset](https://github.com/DevExpress-Examples/aspxgridview-editing-an-in-memory-dataset-e257)
 <!-- feedback -->
-## Does This Example Address Your Development Requirements/Objectives?
+## Does this example address your development requirements/objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=aspxgridview-delete-selected-rows&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=aspxgridview-delete-selected-rows&~~~was_helpful=no)
 
